@@ -11,9 +11,9 @@ export class MoedaService {
   constructor() {}
 
   private moedasObj = [ // http://fixer.io
-  { sigla: 'AUD', descricao: 'Dólar australiano' },
-  { sigla: 'BGN', descricao: 'Lev búlgaro' },
-  { sigla: 'BRL', descricao: 'Real brasileiro' },
+ { sigla: 'AUD', descricao: 'Dólar australiano' },
+ { sigla: 'BGN', descricao: 'Lev búlgaro' },
+ { sigla: 'BRL', descricao: 'Real brasileiro' },
   { sigla: 'CAD', descricao: 'Dólar canadense' },
   { sigla: 'CHF', descricao: 'Franco suíço' },
   { sigla: 'CNY', descricao: 'Yuan Chinês' },

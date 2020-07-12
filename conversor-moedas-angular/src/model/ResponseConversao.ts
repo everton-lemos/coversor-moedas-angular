@@ -3,6 +3,6 @@
     constructor(
         public base: string,
         public date: string,
-        public rate: any) {}
+        public rates: any) {}
 
  }

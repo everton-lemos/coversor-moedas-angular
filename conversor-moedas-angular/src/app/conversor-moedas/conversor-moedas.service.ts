@@ -21,11 +21,11 @@ export class ConversorMoedasService {
     }
 
     cotacaoPara(conversaoResponse: ResponseConversao,
-                conversao: Conversao): number {
+                conversao: Conversao): string {
     if (conversaoResponse === undefined) {
-    return 0;
+    return '0';
     }
-    return conversaoResponse.rate[conversao.moedaPara];
+    return (1 * conversaoResponse.rates[conversao.moedaPara]).toFixed(2);
     }
 
     cotacaoDe(conversaoResponse: ResponseConversao,
@@ -33,8 +33,7 @@ export class ConversorMoedasService {
     if (conversaoResponse === undefined) {
     return '0';
     }
-    return (1 / conversaoResponse.rate[conversao.moedaPara])
-    .toFixed(4);
+    return (1 / conversaoResponse.rates[conversao.moedaPara]).toFixed(2);
     }
 
     dataCotacao(conversaoResponse: ResponseConversao): string {
